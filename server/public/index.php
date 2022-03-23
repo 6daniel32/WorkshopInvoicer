@@ -1,4 +1,4 @@
 <?php
-echo "Tengo el pito chico c: ";
-$pene = 22;
-echo $pene;
+echo "Test message";
+$testVar = 22;
+echo $testVar;
