@@ -1,3 +1,5 @@
 *.env
 /server/var
 /server/vendor
+/server/phpunit.xml
+/server/.phpunit.cache
