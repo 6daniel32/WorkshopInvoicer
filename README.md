@@ -5,4 +5,8 @@ A very basic local LAMP virtual environment created on a docker compose for pet 
 
 2. Execute "docker compose run phpunit --generate-configuration" to create a basix phpunit.xml
 
-3. Execute "docker compose up" and you will have your local lamp structure
+3. Execute "docker compose up" and you will have your local lamp structure working.
+
+4. Execute "docker compose run phpunit" and you will test your code
+
+5. Execute "docker compose run composer" and you will install the dependencies
