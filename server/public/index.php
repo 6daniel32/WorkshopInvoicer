@@ -1,4 +1,4 @@
 <?php
-echo "Test message";
-$testVar = 22;
+echo "Test message: ";
+$testVar = 'hola';
 echo $testVar;

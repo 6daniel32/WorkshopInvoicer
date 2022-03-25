@@ -1,6 +1,7 @@
-# Documentation: https://openwebinars.net/blog/infraestructura-lamp-con-docker-compose/
+# Documentation: https://thephp.website/en/issue/php-docker-quick-setup/
 version: "3.1"
 services:
+    # Web server. It only handles the deployment of the php files to apache
     www:
         build: .
         ports: 
@@ -37,5 +38,23 @@ services:
             # MYSQL_USER: ${MYSQL_USER}
             MYSQL_PASSWORD: ${MYSQL_PASSWORD}
             MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+    composer:
+        image: composer:2.3
+        environment:
+            # Setting this will make sure that composer will have a local cache instead of downloading everything again all the time
+            - COMPOSER_CACHE_DIR=/app/var/cache/composer
+        volumes:
+            - ./server:/app
+        # This only installs the dependencies and then shuts down
+        restart: 'no'
+    # CLI php to execute our tests
+    phpunit:
+        image: php:8.0-cli
+        restart: never
+        volumes:
+            - ./server:/app
+        working_dir: /app
+        # Executes our tests each time we run it
+        entrypoint: vendor/bin/phpunit
 volumes:
     persistent:

@@ -1,4 +1,8 @@
 # DockerLAMP
 A very basic local LAMP virtual environment created on a docker compose for pet projects 
 
-Just execute "docker-compose up" and it should work if you have docker installed and the propper variables set in a .env on the root directory of the project.
+1. Execute "docker compose run composer require --dev phpunit/phpunit" to install phpunit and generate the the composer files
+
+2. Execute "docker compose run phpunit --generate-configuration" to create a basix phpunit.xml
+
+3. Execute "docker compose up" and you will have your local lamp structure
