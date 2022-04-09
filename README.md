@@ -15,4 +15,4 @@ A very basic local LAMP virtual environment created on a docker compose for pet 
 
 1. Execute "docker compose run --rm phpunit" and you will test your code
 
-2. Execute "docker compose run --rm composer" and you will install the dependencies
+2. Execute "docker compose run --rm composer install" and you will install the dependencies
