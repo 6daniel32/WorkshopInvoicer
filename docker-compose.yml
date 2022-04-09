@@ -7,6 +7,7 @@ services:
         ports: 
             - "${SERVER_PORT}:80"
         volumes:
+            # Source code
             - ${SOURCE_DIRECTORY}:/var/www/html
     db:
         image: mysql:8.0
@@ -24,7 +25,7 @@ services:
         # Host volumes. They create a dependency with the host machine.
             # SQL import path. You can set a .sql file there to import a database on the docker compose running stage.
             #- ${SQL_IMPORT_FILES_PATH}:/docker-entrypoint-initdb.d
-            - ${CONFIG_FILES_PATH}:/etc/mysql/conf.d # mysql configuration path
+            - ${SQL_CONFIG_PATH}:/etc/mysql/conf.d # mysql configuration path
         # Named volume. The data on the host will be managed by docker and not
         # binded to any directory in the host OS. The directory within the container
         # is the one on the right.
