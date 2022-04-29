@@ -3,14 +3,14 @@ name: Test and Push Docker image
 on:
   push:
     branches:
-      - 'main'
+      - 'master'
     paths-ignore:
       - .github/**
       - '.gitignore'
       - 'README.md'
   pull_request:
     branches:
-      - 'main'
+      - 'master'
     paths-ignore:
       - .github/**
       - '.gitignore'
