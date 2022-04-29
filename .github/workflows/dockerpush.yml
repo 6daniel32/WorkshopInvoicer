@@ -56,7 +56,7 @@ jobs:
     timeout-minutes: 15
 
     env:
-      IMAGE_NAME: DockerLAMP
+      IMAGE_NAME: dockerlamp
 
     steps:
     - name: Checkout
