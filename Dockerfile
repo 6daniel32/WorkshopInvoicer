@@ -1,6 +1,6 @@
 FROM php:8.0.0-apache
 
-# Prevents errors from showing as well as confirmation dialogs when installing dependencies
+## Prevents errors from showing as well as confirmation dialogs when installing dependencies
 ARG DEBIAN_FRONTEND=noninteractive
 
 # The php docker container provides us with an script to install php extensions easily
