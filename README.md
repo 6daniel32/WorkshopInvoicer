@@ -13,7 +13,7 @@ A very basic local LAMP virtual environment created on a docker compose for pet 
 
 ## Executing tasks in your environment
 
-1. Execute "docker compose run --rm composer <command>" and you will execute a composer command
+1. Execute "docker compose run --rm composer 'composer_command'" and you will execute a composer command
 
 2. Execute "docker compose run --rm phpunit" and you will test your code
 
