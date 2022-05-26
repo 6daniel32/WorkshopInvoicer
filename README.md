@@ -1,5 +1,5 @@
-# Docker LAMP
-A very basic local LAMP virtual environment created on a docker compose for pet projects
+# WorkshopInvoicer
+A design patterns learning project. Built on top of on my DockerLAMP project
 
 ## Turning on your environment
 

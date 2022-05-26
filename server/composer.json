@@ -1,5 +1,11 @@
 {
     "require-dev": {
-        "phpunit/phpunit": "^9.5"
+        "phpunit/phpunit": "9.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "PHPUnit\\Framework\\": "vendor/phpunit/phpunit/src/Framework/",
+            "WorkshopInvoicer\\": "WorkshopInvoicer/"
+        }
     }
 }
